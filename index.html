@@ -1,77 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Image Gallery</title>
-    <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="container">
+    <div class="calculator">
 
-<header>
+        <input type="text" class="display" readonly>
 
-<h1>IMAGE GALLERY</h1>
+        <div class="row">
+            <button class="button">C</button>
+            <button class="button">⌫</button>
+            <button class="button">%</button>
+            <button class="button">/</button>
+        </div>
 
-<p>Moments that stay forever</p>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">*</button>
+        </div>
 
-<div class="line"></div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+        </div>
 
-</header>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">+</button>
+        </div>
 
-<div class="buttons">
-
-<button class="active" onclick="filterImages('all')">ALL</button>
-
-<button onclick="filterImages('nature')">NATURE</button>
-
-<button onclick="filterImages('city')">CITY</button>
-
-<button onclick="filterImages('friends')">FRIENDS</button>
-
-<button onclick="filterImages('family')">FAMILY</button>
-
-<button onclick="filterImages('cousin')">COUSINS</button>
-
-</div>
-
-<div class="gallery"></div>
-
-<div class="load">
-
-<button id="loadBtn">LOAD MORE</button>
-
-</div>
-
-</div>
-
-
-
-<div class="lightbox">
-
-<button class="close">
-<i class="ri-close-line"></i>
-</button>
-
-<button class="prev">
-<i class="ri-arrow-left-s-line"></i>
-</button>
-
-<img class="big-img">
-
-<button class="next">
-<i class="ri-arrow-right-s-line"></i>
-</button>
-
-</div>
+        <div class="row">
+            <button class="button zero">0</button>
+            <button class="button">.</button>
+            <button class="button equal">=</button>
+        </div>
+<p class="credit">Made with Passion  by <span>Sidra Sheikh</span></p>
+    </div>
 
 <script src="script.js"></script>
 
 </body>
-    
-
 </html>
